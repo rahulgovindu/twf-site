@@ -11,10 +11,16 @@ export default function Founder() {
           </p>
         </Reveal>
         <Reveal>
-          <h2 className="font-display shine mb-8 text-3xl leading-tight sm:text-4xl">
+          <h2 className="font-display shine mb-4 text-3xl leading-tight sm:text-4xl">
             I never thought I wouldn&rsquo;t clear UPSC — not even in my
             wildest dreams.
           </h2>
+        </Reveal>
+        <Reveal>
+          <p className="mb-8 text-sm text-ink-dim italic">
+            Engineer by accident. Broke up with UPSC. Making peace with
+            entrepreneurship.
+          </p>
         </Reveal>
 
         <Reveal>
@@ -46,6 +52,58 @@ export default function Founder() {
               couldn&rsquo;t find.
             </strong>
           </p>
+        </Reveal>
+
+        {/* Verifiable credentials — claims become facts when they carry names */}
+        <Reveal>
+          <div className="surface-gradient mb-10 rounded-[2px] border border-line p-6 sm:p-7">
+            <dl className="space-y-4 text-sm">
+              <div>
+                <dt className="mb-1 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
+                  Ventures
+                </dt>
+                <dd className="leading-relaxed text-ink">
+                  Founder,{" "}
+                  <a
+                    href="http://www.govindubrothers.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent-soft transition-colors hover:text-accent"
+                  >
+                    Govindu Brothers Enterprises
+                  </a>{" "}
+                  — agri-exports to Dubai &amp; Sri Lanka · Co-founder,{" "}
+                  <a
+                    href="http://www.rosemediahouse.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent-soft transition-colors hover:text-accent"
+                  >
+                    Rose Media House
+                  </a>{" "}
+                  — digital branding for doctors &amp; small businesses
+                </dd>
+              </div>
+              <div>
+                <dt className="mb-1 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
+                  Education
+                </dt>
+                <dd className="leading-relaxed text-ink">
+                  B.Tech (ECE), JNTU Hyderabad · MA in Political Science &amp;
+                  International Relations, IGNOU · UGC NET qualified
+                </dd>
+              </div>
+              <div>
+                <dt className="mb-1 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
+                  Before this
+                </dt>
+                <dd className="leading-relaxed text-ink">
+                  Content developer &amp; mentor in the UPSC coaching industry
+                  · wrote International Relations current-affairs magazines
+                </dd>
+              </div>
+            </dl>
+          </div>
         </Reveal>
 
         <Reveal>

@@ -7,6 +7,7 @@ import Why from "@/components/sections/Why";
 import Support from "@/components/sections/Support";
 import Letter from "@/components/sections/Letter";
 import Founder from "@/components/sections/Founder";
+import AfterExam from "@/components/sections/AfterExam";
 import PortalTeaser from "@/components/sections/PortalTeaser";
 import ShareStory from "@/components/sections/ShareStory";
 import CallCta from "@/components/sections/CallCta";
@@ -73,6 +74,7 @@ export default function Home() {
         <Support />
         <Letter />
         <Founder />
+        <AfterExam />
         <PortalTeaser />
         <ShareStory />
         <CallCta />

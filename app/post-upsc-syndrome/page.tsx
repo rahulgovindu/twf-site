@@ -174,11 +174,15 @@ export default function PostUpscSyndrome() {
         <Reveal>
           <p className="mb-4 leading-relaxed text-ink">
             Because everything was staked on one outcome. Fewer than 1 in 500
-            who write the exam make the final list, and a serious attempt
-            costs years — six or more for many, at eight to ten hours a day.
-            That is over seventeen thousand hours of disciplined work, often
-            through your entire twenties, with family hopes riding on every
-            attempt.
+            who write the exam make the final list — and even among the
+            roughly 1,000 selected each year, only around 180 become IAS
+            officers, the service most aspirants actually dream of. A serious
+            attempt costs years — six or more for many, at eight to ten
+            hours a day, mastering a syllabus that spans seventeen
+            general-studies subjects, hundreds of thinkers, and a thousand
+            news cycles. That is over seventeen thousand hours of disciplined
+            work, often through your entire twenties, with family hopes
+            riding on every attempt.
           </p>
         </Reveal>
         <Reveal>
