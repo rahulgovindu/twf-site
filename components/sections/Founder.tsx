@@ -23,40 +23,46 @@ export default function Founder() {
           </p>
         </Reveal>
 
-        {/* Portrait — floats beside the opening of the story on desktop */}
-        <div className="mb-6 w-40 sm:float-right sm:mb-3 sm:ml-8 sm:w-52">
-          <img
-            src="/rahul-govindu.jpg"
-            alt="Rahul Govindu, founder of The Way Forward"
-            width={640}
-            height={853}
-            loading="lazy"
-            className="w-full rounded-[2px] border border-line"
-          />
-          <p className="mt-2 text-xs text-ink-dim">Rahul Govindu</p>
-        </div>
+        {/* Opening block: story text + portrait in a clean two-column grid
+            (photo first in source so it leads on mobile). */}
+        <div className="sm:grid sm:grid-cols-[1fr_13rem] sm:items-start sm:gap-x-10">
+          <div className="mb-8 w-44 sm:order-2 sm:mb-0 sm:w-full">
+            <img
+              src="/rahul-govindu.jpg"
+              alt="Rahul Govindu, founder of The Way Forward"
+              width={640}
+              height={853}
+              loading="lazy"
+              className="w-full rounded-[2px] border border-line"
+            />
+            <p className="mt-2 text-xs text-ink-dim">Rahul Govindu</p>
+          </div>
 
-        <Reveal>
-          <p className="mb-6 text-lg leading-relaxed text-ink">
-            Six-plus years. Seventeen thousand five hundred hours of
-            preparation. No backup exam, no Plan B — and when the final
-            result came, a five-year career gap and an emptiness I had no name
-            for. That suffering was very personal, and I found no one who
-            could address this phase of my life.
-          </p>
-        </Reveal>
-        <Reveal>
-          <p className="mb-6 leading-relaxed text-ink-dim">
-            It took six months to make peace with it, with family and a few
-            friends as the pillars of my restart. Then a UPSC syllabus topic
-            became a direction: I had studied agricultural trade for Mains,
-            and it stayed with me. I upskilled in data analysis, generative
-            AI, and marketing, analysed 300+ export products, and built my
-            own agri-exports company from zero. Alongside it, I work as an
-            independent full-stack developer, shipping web platforms and AI
-            tools for clients in India and abroad.
-          </p>
-        </Reveal>
+          <div className="sm:order-1">
+            <Reveal>
+              <p className="mb-6 text-lg leading-relaxed text-ink">
+                Six-plus years. Seventeen thousand five hundred hours of
+                preparation. No backup exam, no Plan B — and when the final
+                result came, a five-year career gap and an emptiness I had no
+                name for. That suffering was very personal, and I found no
+                one who could address this phase of my life.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="mb-6 leading-relaxed text-ink-dim">
+                It took six months to make peace with it, with family and a
+                few friends as the pillars of my restart. Then a UPSC
+                syllabus topic became a direction: I had studied agricultural
+                trade for Mains, and it stayed with me. I upskilled in data
+                analysis, generative AI, and marketing, analysed 300+ export
+                products, and built my own agri-exports company from zero.
+                Alongside it, I work as an independent full-stack developer,
+                shipping web platforms and AI tools for clients in India and
+                abroad.
+              </p>
+            </Reveal>
+          </div>
+        </div>
         <Reveal>
           <p className="mb-10 leading-relaxed text-ink">
             None of that erases the years. But it proved something: the
