@@ -3,12 +3,36 @@
 import { useState } from "react";
 import Reveal from "@/components/Reveal";
 
-/* Email capture — the conversion spine of the pre-portal phase.
-   TODO(wiring): connect to Brevo before launch. Static-export options:
-   (a) Brevo hosted-form POST URL, or (b) a small subscribe.php endpoint on
-   Hostinger holding the API key. The UI below is final either way. */
+/* Email capture — posts to the PHP endpoint on Hostinger (hostinger-api/).
+   In local dev the endpoint doesn't exist; the form will show the error state. */
 export default function Newsletter() {
-  const [status, setStatus] = useState<"idle" | "done">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">(
+    "idle"
+  );
+  const [message, setMessage] = useState("");
+
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/subscribe.php", {
+        method: "POST",
+        body: data,
+      });
+      const json = await res.json().catch(() => null);
+      if (res.ok && json?.ok) {
+        setStatus("done");
+      } else {
+        setMessage(json?.error ?? "Something went wrong. Please try again.");
+        setStatus("error");
+      }
+    } catch {
+      setMessage("Couldn't reach the server. Please try again.");
+      setStatus("error");
+    }
+  }
 
   return (
     <section id="newsletter" className="relative py-20 sm:py-24">
@@ -28,32 +52,46 @@ export default function Newsletter() {
               Unsubscribe anytime.
             </p>
 
-            {status === "idle" ? (
-              <form
-                className="flex flex-wrap gap-3"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  setStatus("done");
-                }}
-              >
+            {status === "done" ? (
+              <p className="font-medium text-accent-soft" role="status">
+                You&rsquo;re on the list. Talk soon.
+              </p>
+            ) : (
+              <form className="flex flex-wrap gap-3" onSubmit={onSubmit}>
                 <label className="sr-only" htmlFor="nl-email">
                   Email address
                 </label>
                 <input
                   id="nl-email"
+                  name="email"
                   type="email"
                   required
                   autoComplete="email"
                   placeholder="you@example.com"
-                  className="min-w-0 flex-1 basis-56 rounded-[2px] border border-line bg-bg px-4 py-3 text-sm text-ink placeholder:text-ink-dim focus-visible:border-accent focus-visible:outline-none"
+                  className="min-w-0 flex-1 basis-56 rounded-[2px] border border-line bg-black-deep/40 px-4 py-3 text-sm text-ink placeholder:text-ink-dim focus-visible:border-accent focus-visible:outline-none"
                 />
-                <button type="submit" className="btn btn-primary">
-                  Subscribe
+                {/* Honeypot — hidden from real users */}
+                <input
+                  type="text"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                />
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  disabled={status === "sending"}
+                >
+                  {status === "sending" ? "Subscribing…" : "Subscribe"}
                 </button>
               </form>
-            ) : (
-              <p className="font-medium text-accent-soft" role="status">
-                You&rsquo;re on the list. Talk soon.
+            )}
+
+            {status === "error" && (
+              <p className="mt-3 text-sm text-accent-soft" role="alert">
+                {message}
               </p>
             )}
 

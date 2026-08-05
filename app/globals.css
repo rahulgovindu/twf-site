@@ -9,19 +9,22 @@
    ========================================================================== */
 
 :root {
-  --twf-bg: #0a0a0b;
-  --twf-surface: #1e1e22;
-  --twf-surface-2: #28282d;
-  --twf-text: #b8bcc4;
-  --twf-text-strong: #d4d7dc;
-  --twf-text-dim: #7c818a;
+  /* Canvas = the logo's grey (#383838 sampled). Black (--twf-black) stays
+     for the zones that need depth: hero core, call-cta orb, footer base. */
+  --twf-bg: #38383a;
+  --twf-black: #0a0a0b;
+  --twf-surface: #2b2b2f;
+  --twf-surface-2: #232327;
+  --twf-text: #c2c6cd;
+  --twf-text-strong: #e2e5e9;
+  --twf-text-dim: #8e939c;
   --twf-accent: #ff7a1a;
   --twf-accent-soft: #ffa05c;
   --twf-accent-deep: #c45608;
 
-  --twf-border: rgba(168, 173, 181, 0.12);
-  --twf-border-strong: rgba(168, 173, 181, 0.22);
-  --twf-hairline: rgba(168, 173, 181, 0.08);
+  --twf-border: rgba(200, 204, 212, 0.14);
+  --twf-border-strong: rgba(200, 204, 212, 0.24);
+  --twf-hairline: rgba(200, 204, 212, 0.1);
 
   /* Silver metallic — matches the W-arrow gradient in the logo */
   --twf-silver-shine: linear-gradient(
@@ -35,6 +38,7 @@
 
 @theme inline {
   --color-bg: var(--twf-bg);
+  --color-black-deep: var(--twf-black);
   --color-surface: var(--twf-surface);
   --color-surface-2: var(--twf-surface-2);
   --color-ink: var(--twf-text);
@@ -169,24 +173,20 @@ body::after {
   );
 }
 
-/* Section transition — dark bleeding into warmer dark (between-section fade) */
+/* Section transition — grey bleeding warmer (between-section fade) */
 @utility fade-warm {
-  background-image: linear-gradient(
-    180deg,
-    var(--twf-bg) 0%,
-    #121014 55%,
-    #16120f 100%
-  );
+  background-image: linear-gradient(180deg, var(--twf-bg) 0%, #37312a 100%);
 }
 
 @utility fade-grey {
-  background-image: linear-gradient(180deg, var(--twf-bg) 0%, #131316 100%);
+  background-image: linear-gradient(180deg, #333336 0%, #2e2e32 100%);
 }
 
-/* Gradient surface — for cards */
+/* Gradient surface — cards sit darker than the grey canvas, echoing the
+   logo's darker circle on its grey field. */
 @utility surface-gradient {
-  background-image: linear-gradient(180deg, var(--twf-surface), #141416);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  background-image: linear-gradient(180deg, var(--twf-surface), #242428);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 /* Gradient border — 1px silver-to-transparent ring via padding-box trick */
