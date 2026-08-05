@@ -2,7 +2,7 @@ import { SITE, whatsappLink } from "@/lib/site";
 
 const QUICK_LINKS = [
   { href: "/#to-whom", label: "Who it's for" },
-  { href: "/#why", label: "Why this platform" },
+  { href: "/post-upsc-syndrome/", label: "POST-UPSC Syndrome" },
   { href: "/#letter", label: "For parents" },
   { href: "/#portal-teaser", label: "What's coming" },
   { href: "/#call-cta", label: "Book a call" },

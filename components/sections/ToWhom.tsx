@@ -86,6 +86,14 @@ export default function ToWhom() {
                 career and confidence, often carrying a multi-year gap.
               </p>
             </blockquote>
+            <p className="mt-4">
+              <a
+                href="/post-upsc-syndrome/"
+                className="text-sm font-medium text-accent-soft transition-colors hover:text-accent"
+              >
+                What it feels like, and what helps →
+              </a>
+            </p>
           </div>
         </Reveal>
 

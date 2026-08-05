@@ -130,11 +130,14 @@ export default function Why() {
 
         <Reveal>
           <p className="mt-12 mb-6 leading-relaxed text-ink-dim">
-            Preparation has a cost nobody discusses: time. Opportunity has
-            moved with every era — government jobs, then IT, then the
-            internet, now AI. A Plan B isn&rsquo;t betrayal of your dream;
-            it&rsquo;s how you carry that dream&rsquo;s discipline into the
-            next one.
+            Preparation has a cost nobody discusses:{" "}
+            <strong className="shine-warm font-display text-[1.15em]">
+              time
+            </strong>
+            . Opportunity has moved with every era — government jobs, then
+            IT, then the internet, now AI. A Plan B isn&rsquo;t betrayal of
+            your dream; it&rsquo;s how you carry that dream&rsquo;s
+            discipline into the next one.
           </p>
         </Reveal>
         <Reveal>
