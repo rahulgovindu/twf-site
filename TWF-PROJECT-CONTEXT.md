@@ -171,8 +171,15 @@ Separate pages: `/post-upsc-syndrome/` (definition, first-person account,
   Science & IR, IGNOU (2021–23) · UGC NET qualified (2023) · ex-content
   developer & mentor, La Ex IAS Academy (2022–23) · volunteers: Robinhood
   Army, blood camps, COVID-19 relief. Languages: Telugu, English. Age 32.
-- Socials: YouTube/Instagram/X/LinkedIn URLs pending — add to `lib/site.ts`
-  when created (icons appear automatically).
+- Socials (DECIDED 2026-08-05): **personal-brand-first** — Rahul's own
+  YouTube/Instagram/X accounts (@rahulgovindu), NOT separate TWF accounts.
+  TWF is the flagship pillar: YouTube playlist/show "The Way Forward with
+  Rahul Govindu", Instagram clips, X threads. Future pillars (sequenced
+  after TWF owns its niche, months 1–6 TWF-dominant): AI, exports, startups,
+  later travel. Political content: analysis-only (PSIR voice), never
+  partisan near TWF surfaces. TWF-owned assets (site, email list, podcast
+  name) stay TWF-branded regardless of channel evolution. URLs pending —
+  add to `lib/site.ts` when created (icons appear automatically).
 
 ## 11. Open items / roadmap
 
