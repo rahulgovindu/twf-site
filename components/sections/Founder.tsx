@@ -54,55 +54,71 @@ export default function Founder() {
           </p>
         </Reveal>
 
-        {/* Verifiable credentials — claims become facts when they carry names */}
+        {/* The rebuild, quantified — outcomes as evidence of the thesis
+            ("the discipline survives the result"), not resume rows. */}
         <Reveal>
-          <div className="surface-gradient mb-10 rounded-[2px] border border-line p-6 sm:p-7">
-            <dl className="space-y-4 text-sm">
+          <div className="surface-gradient mb-10 rounded-[2px] border border-line p-6 sm:p-8">
+            <p className="mb-6 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
+              The rebuild, two years in
+            </p>
+            <div className="grid grid-cols-2 gap-x-6 gap-y-7">
               <div>
-                <dt className="mb-1 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
-                  Ventures
-                </dt>
-                <dd className="leading-relaxed text-ink">
-                  Founder,{" "}
-                  <a
-                    href="http://www.govindubrothers.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent-soft transition-colors hover:text-accent"
-                  >
-                    Govindu Brothers Enterprises
-                  </a>{" "}
-                  — agri-exports to Dubai &amp; Sri Lanka · Co-founder,{" "}
-                  <a
-                    href="http://www.rosemediahouse.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-accent-soft transition-colors hover:text-accent"
-                  >
-                    Rose Media House
-                  </a>{" "}
-                  — digital branding for doctors &amp; small businesses
-                </dd>
+                <div className="font-display shine text-3xl sm:text-4xl">2</div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-dim">
+                  companies built from zero
+                </p>
               </div>
               <div>
-                <dt className="mb-1 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
-                  Education
-                </dt>
-                <dd className="leading-relaxed text-ink">
-                  B.Tech (ECE), JNTU Hyderabad · MA in Political Science &amp;
-                  International Relations, IGNOU · UGC NET qualified
-                </dd>
+                <div className="font-display shine text-3xl sm:text-4xl">
+                  300+
+                </div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-dim">
+                  export products analysed across agri, pharma &amp; chemicals
+                </p>
               </div>
               <div>
-                <dt className="mb-1 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
-                  Before this
-                </dt>
-                <dd className="leading-relaxed text-ink">
-                  Content developer &amp; mentor in the UPSC coaching industry
-                  · wrote International Relations current-affairs magazines
-                </dd>
+                <div className="font-display shine-warm text-3xl sm:text-4xl">
+                  3X
+                </div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-dim">
+                  growth delivered for export clients in spices,
+                  agrochemicals &amp; pharma
+                </p>
               </div>
-            </dl>
+              <div>
+                <div className="font-display shine text-3xl sm:text-4xl">
+                  10+
+                </div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-dim">
+                  doctors &amp; small businesses built into digital brands
+                </p>
+              </div>
+            </div>
+            <p className="mt-7 border-t border-hairline pt-5 text-sm leading-relaxed text-ink">
+              <a
+                href="http://www.govindubrothers.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-soft transition-colors hover:text-accent"
+              >
+                Govindu Brothers Enterprises
+              </a>{" "}
+              — agri-exports to Dubai &amp; Sri Lanka ·{" "}
+              <a
+                href="http://www.rosemediahouse.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-soft transition-colors hover:text-accent"
+              >
+                Rose Media House
+              </a>{" "}
+              — digital branding for doctors &amp; small businesses
+            </p>
+            <p className="mt-3 text-xs leading-relaxed text-ink-dim">
+              B.Tech (ECE), JNTU Hyderabad · MA (PSIR), IGNOU · UGC NET
+              qualified · ex-content developer &amp; mentor, UPSC coaching
+              industry
+            </p>
           </div>
         </Reveal>
 
