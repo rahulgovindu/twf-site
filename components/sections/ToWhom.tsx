@@ -38,19 +38,26 @@ export default function ToWhom() {
           </p>
         </Reveal>
 
-        {/* Sacrifice stanza — line-by-line reveal */}
-        <ul className="mb-10 space-y-3" aria-label="What you carried">
-          {[
-            "Dreams. Family hopes. Sacrifices.",
-            "Loneliness. Broken promises. Silent tears.",
-            "The endless cycle of attempts. Your entire twenties.",
-          ].map((line, i) => (
-            <Reveal key={line} delay={i * 0.15}>
-              <li className="font-display text-xl text-ink-strong sm:text-2xl">
-                {line}
-              </li>
-            </Reveal>
-          ))}
+        {/* Sacrifice stanza — a typographic descent: each line steps deeper
+            and dims, then "Your entire twenties." flares warm (time = the
+            cost, echoing the Why section's highlight). */}
+        <ul className="mb-12 space-y-4 py-2" aria-label="What you carried">
+          <Reveal>
+            <li className="font-display text-xl text-ink-strong sm:text-2xl">
+              Dreams. Family hopes. Sacrifices.
+            </li>
+          </Reveal>
+          <Reveal delay={0.25}>
+            <li className="font-display pl-6 text-xl text-ink sm:pl-12 sm:text-2xl">
+              Loneliness. Broken promises. Silent tears.
+            </li>
+          </Reveal>
+          <Reveal delay={0.5}>
+            <li className="font-display pl-12 text-xl text-ink-dim sm:pl-24 sm:text-2xl">
+              The endless cycle of attempts.{" "}
+              <span className="shine-warm">Your entire twenties.</span>
+            </li>
+          </Reveal>
         </ul>
 
         <Reveal>
