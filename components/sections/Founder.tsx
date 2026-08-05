@@ -39,8 +39,9 @@ export default function Founder() {
             became a direction: I had studied agricultural trade for Mains,
             and it stayed with me. I upskilled in data analysis, generative
             AI, and marketing, analysed 300+ export products, and built my
-            own agri-exports company from zero. Alongside it, I build and
-            ship AI tools for clients in India and abroad.
+            own agri-exports company from zero. Alongside it, I work as an
+            independent full-stack developer, shipping web platforms and AI
+            tools for clients in India and abroad.
           </p>
         </Reveal>
         <Reveal>
@@ -128,7 +129,10 @@ export default function Founder() {
               >
                 Rose Media House
               </a>{" "}
-              — digital branding for professionals &amp; small businesses
+              — digital branding for professionals &amp; small businesses ·
+              and the third build is the one you&rsquo;re reading — this
+              platform, designed and shipped end to end with the same AI
+              tooling I use for clients
             </p>
             <p className="mt-3 text-xs leading-relaxed text-ink-dim">
               B.Tech (ECE), JNTU Hyderabad · MA (PSIR), IGNOU · UGC NET
