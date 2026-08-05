@@ -1,26 +1,273 @@
 @import "tailwindcss";
 
+/* =============================================================================
+   TWF DESIGN SYSTEM — locked v4 palette derived from the logo:
+   silver-metallic W on dark grey circle with orange glow, black canvas.
+   Fraunces (headings) + Fira Sans (body).
+   Gradient-first: every surface breathes — radial orange glows, silver washes,
+   dark-to-darker section transitions. Flat fills are the exception.
+   ========================================================================== */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --twf-bg: #0a0a0b;
+  --twf-surface: #1e1e22;
+  --twf-surface-2: #28282d;
+  --twf-text: #b8bcc4;
+  --twf-text-strong: #d4d7dc;
+  --twf-text-dim: #7c818a;
+  --twf-accent: #ff7a1a;
+  --twf-accent-soft: #ffa05c;
+  --twf-accent-deep: #c45608;
+
+  --twf-border: rgba(168, 173, 181, 0.12);
+  --twf-border-strong: rgba(168, 173, 181, 0.22);
+  --twf-hairline: rgba(168, 173, 181, 0.08);
+
+  /* Silver metallic — matches the W-arrow gradient in the logo */
+  --twf-silver-shine: linear-gradient(
+    177deg,
+    #f0f1f3 8%,
+    #d4d7dc 35%,
+    #a8adb5 65%,
+    #c9ccd1 96%
+  );
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--twf-bg);
+  --color-surface: var(--twf-surface);
+  --color-surface-2: var(--twf-surface-2);
+  --color-ink: var(--twf-text);
+  --color-ink-strong: var(--twf-text-strong);
+  --color-ink-dim: var(--twf-text-dim);
+  --color-accent: var(--twf-accent);
+  --color-accent-soft: var(--twf-accent-soft);
+  --color-accent-deep: var(--twf-accent-deep);
+  --color-line: var(--twf-border);
+  --color-line-strong: var(--twf-border-strong);
+  --color-hairline: var(--twf-hairline);
+
+  --font-head: var(--font-fraunces), "Playfair Display", Georgia, serif;
+  --font-body: var(--font-fira), system-ui, -apple-system, "Segoe UI", Roboto,
+    sans-serif;
+
+  --radius-twf: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ---------------------------------------------------------------------------
+   BASE
+   ------------------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--twf-bg);
+  color: var(--twf-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(255, 122, 26, 0.28);
+  color: var(--twf-text-strong);
+}
+
+/* Film grain — static SVG turbulence tile; removes the flat digital look. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ---------------------------------------------------------------------------
+   TYPOGRAPHY PRIMITIVES
+   ------------------------------------------------------------------------- */
+@utility font-display {
+  font-family: var(--font-head);
+  font-weight: 550;
+  font-variation-settings: "opsz" 100;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+/* Silver metallic gradient text — headings */
+@utility shine {
+  background: var(--twf-silver-shine);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Warm variant — silver melting into orange at the tail (hero emphasis) */
+@utility shine-warm {
+  background: linear-gradient(
+    115deg,
+    #f0f1f3 0%,
+    #d4d7dc 30%,
+    #ffa05c 62%,
+    #ff7a1a 92%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@utility eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(168, 173, 181, 0.6);
+}
+
+/* ---------------------------------------------------------------------------
+   GRADIENT SYSTEM — the ambient light layer
+   ------------------------------------------------------------------------- */
+
+/* Radial orange glow — the logo halo, scaled to sections. Position with
+   background-position via composition, e.g. glow-accent + a placement class. */
+@utility glow-accent {
+  background-image: radial-gradient(
+    ellipse 60% 50% at 50% 100%,
+    rgba(255, 122, 26, 0.14),
+    rgba(255, 122, 26, 0.05) 45%,
+    transparent 75%
+  );
+}
+
+@utility glow-accent-tl {
+  background-image: radial-gradient(
+    ellipse 50% 40% at 0% 0%,
+    rgba(255, 122, 26, 0.1),
+    transparent 70%
+  );
+}
+
+@utility glow-silver {
+  background-image: radial-gradient(
+    ellipse 55% 45% at 50% 0%,
+    rgba(212, 215, 220, 0.06),
+    transparent 70%
+  );
+}
+
+/* Section transition — dark bleeding into warmer dark (between-section fade) */
+@utility fade-warm {
+  background-image: linear-gradient(
+    180deg,
+    var(--twf-bg) 0%,
+    #121014 55%,
+    #16120f 100%
+  );
+}
+
+@utility fade-grey {
+  background-image: linear-gradient(180deg, var(--twf-bg) 0%, #131316 100%);
+}
+
+/* Gradient surface — for cards */
+@utility surface-gradient {
+  background-image: linear-gradient(180deg, var(--twf-surface), #141416);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+/* Gradient border — 1px silver-to-transparent ring via padding-box trick */
+@utility border-shine {
+  border: 1px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Hairline divider that fades at both ends */
+@utility hairline-fade {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    var(--twf-hairline) 20%,
+    var(--twf-hairline) 80%,
+    transparent
+  );
+}
+
+/* ---------------------------------------------------------------------------
+   COMPONENTS
+   ------------------------------------------------------------------------- */
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    line-height: 1;
+    padding: 0.95em 1.8em;
+    border-radius: var(--radius-twf);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+      transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+      background 0.2s,
+      border-color 0.2s,
+      box-shadow 0.25s,
+      color 0.2s;
+  }
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-primary {
+    background: linear-gradient(135deg, #e8eaed, #c9ccd1);
+    color: #0a0a0b;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #f0f1f3, #d4d7dc);
+    box-shadow: 0 4px 20px rgba(168, 173, 181, 0.2);
+  }
+
+  .btn-accent {
+    background: linear-gradient(135deg, #ffa05c, #ff7a1a 55%, #e56a10);
+    color: #17110a;
+  }
+  .btn-accent:hover {
+    box-shadow: 0 8px 30px -6px rgba(255, 122, 26, 0.45);
+  }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--twf-text);
+    border-color: var(--twf-border-strong);
+  }
+  .btn-ghost:hover {
+    border-color: var(--twf-accent);
+    color: var(--twf-text-strong);
+    background: rgba(255, 122, 26, 0.06);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn,
+    .btn:hover {
+      transition: none;
+      transform: none;
+    }
+  }
 }
