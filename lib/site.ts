@@ -16,7 +16,7 @@ export const SITE = {
     youtube: "https://www.youtube.com/@rahulgovindu",
     instagram: "https://www.instagram.com/rahulgovindu/",
     x: "https://x.com/rahulgovindu49",
-    linkedin: "https://www.linkedin.com/in/rahul-govindu-193644b6/",
+    linkedin: "https://www.linkedin.com/in/rahulgovindu/",
   },
 };
 
