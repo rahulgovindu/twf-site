@@ -18,17 +18,23 @@ export default function ToWhom() {
 
         <Reveal>
           <p className="mb-6 text-lg leading-relaxed text-ink">
-            If you&rsquo;re reading this, you&rsquo;re likely in your late
-            attempts at UPSC, past Mains or Interview and eyeing the next
-            attempt, out of attempts — or you&rsquo;ve moved on but still carry
-            the weight of it.
+            If you&rsquo;re reading this, you&rsquo;re probably deep into your
+            late attempts. Or past Mains or the Interview, weighing one more
+            year. Or out of attempts entirely. Or you&rsquo;ve moved on — and
+            still carry the weight of it.
           </p>
         </Reveal>
         <Reveal>
           <p className="mb-10 leading-relaxed text-ink-dim">
-            Primarily for UPSC aspirants, and aspirants of any government exam,
-            who gave everything for years but couldn&rsquo;t clear it. An exam
-            is not life. Failing UPSC does not mean you failed at life.
+            Whichever it is, this platform is for you — and for every
+            government-exam aspirant who gave everything for years and
+            didn&rsquo;t see their name on the list. Failing an exam does not
+            mean you failed at life.
+          </p>
+        </Reveal>
+        <Reveal>
+          <p className="mb-5 leading-relaxed text-ink">
+            Because we know what those years actually held:
           </p>
         </Reveal>
 
