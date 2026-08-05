@@ -169,7 +169,7 @@ Separate pages: `/post-upsc-syndrome/` (definition, first-person account,
 ## 10. Contacts & entities
 
 - Email: **info@thewayforward.in** · WhatsApp: **+91 8985 308 312**
-  (wa.me/918985308312) · Founder personal email: contact@rahulgovindu.com.
+  (wa.me/918985308312).
 - Ventures: **Govindu Brothers Enterprises** (govindubrothers.com,
   agri-exports to Dubai & Sri Lanka, APEDA-associated) · **Rose Media House**
   (rosemediahouse.in, digital branding, co-founded with brother) ·
