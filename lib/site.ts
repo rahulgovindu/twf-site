@@ -13,10 +13,10 @@ export const SITE = {
 
   /** Empty string = icon not rendered. */
   socials: {
-    youtube: "",
-    instagram: "",
-    x: "",
-    linkedin: "",
+    youtube: "https://www.youtube.com/@rahulgovindu",
+    instagram: "https://www.instagram.com/rahulgovindu/",
+    x: "https://x.com/rahulgovindu49",
+    linkedin: "https://www.linkedin.com/in/rahul-govindu-193644b6/",
   },
 };
 
