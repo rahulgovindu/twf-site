@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: "The Way Forward — Life beyond the exam",
   description:
     "A platform for UPSC and government exam aspirants rebuilding their careers — stories, opportunities, skills, and support. An exam is not life.",
+  alternates: { canonical: "/" },
+  keywords: [
+    "life after UPSC",
+    "POST-UPSC Syndrome",
+    "UPSC failure what next",
+    "career after UPSC preparation",
+    "government exam career transition",
+    "ex-UPSC aspirant jobs",
+  ],
   openGraph: {
     title: "The Way Forward — Life beyond the exam",
     description:

@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy — The Way Forward",
   description:
     "What The Way Forward collects, why, and how you can ask for your data to be removed.",
+  alternates: { canonical: "/privacy/" },
 };
 
 export default function Privacy() {

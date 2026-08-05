@@ -54,7 +54,7 @@ export default function Newsletter() {
 
             {status === "done" ? (
               <p className="font-medium text-accent-soft" role="status">
-                You&rsquo;re on the list. Talk soon.
+                You made this list. Talk soon.
               </p>
             ) : (
               <form className="flex flex-wrap gap-3" onSubmit={onSubmit}>

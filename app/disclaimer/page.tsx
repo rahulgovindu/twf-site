@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Disclaimer — The Way Forward",
   description:
     "What The Way Forward is, what it is not, and how to read the information on this site.",
+  alternates: { canonical: "/disclaimer/" },
 };
 
 export default function Disclaimer() {

@@ -18,7 +18,18 @@ const JSON_LD = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://thewayforward.in/#website",
+      url: "https://thewayforward.in",
+      name: "The Way Forward",
+      description:
+        "A platform for UPSC and government exam aspirants rebuilding their careers.",
+      inLanguage: "en-IN",
+      publisher: { "@id": "https://thewayforward.in/#org" },
+    },
+    {
       "@type": "Organization",
+      "@id": "https://thewayforward.in/#org",
       name: "The Way Forward",
       url: "https://thewayforward.in",
       logo: "https://thewayforward.in/twf-logo.jpg",

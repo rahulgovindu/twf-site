@@ -59,7 +59,7 @@ export default function Header() {
             href="/#call-cta"
             className="btn btn-primary !px-5 !py-2.5 text-sm whitespace-nowrap"
           >
-            Book a Free Call
+            Book a free call
           </a>
         </nav>
 
@@ -119,7 +119,7 @@ export default function Header() {
                 className="btn btn-primary w-full"
                 onClick={() => setOpen(false)}
               >
-                Book a Free Call
+                Book a free call
               </a>
             </li>
           </ul>

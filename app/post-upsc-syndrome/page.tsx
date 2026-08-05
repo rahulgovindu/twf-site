@@ -8,20 +8,56 @@ export const metadata: Metadata = {
   title: "POST-UPSC Syndrome — what it is and why it has a name",
   description:
     "POST-UPSC Syndrome: the phase after your final attempts when you must rebuild identity, career and confidence. What it feels like, why it hits so hard, and what helps.",
+  alternates: { canonical: "/post-upsc-syndrome/" },
+  openGraph: {
+    title: "POST-UPSC Syndrome — what it is and why it has a name",
+    description:
+      "The phase after your final attempts, when you must rebuild identity, career and confidence. What it feels like, why it hits so hard, and what helps.",
+    url: "https://thewayforward.in/post-upsc-syndrome/",
+    type: "article",
+  },
 };
 
 const JSON_LD = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "POST-UPSC Syndrome — what it is and why it has a name",
-  author: { "@type": "Person", name: "Rahul Govindu" },
-  publisher: { "@type": "Organization", name: "The Way Forward" },
-  about: {
-    "@type": "DefinedTerm",
-    name: "POST-UPSC Syndrome",
-    description:
-      "The phase after a UPSC aspirant's final attempts when they realise the dream may never come true — and must rebuild their identity, career and confidence, often carrying a multi-year gap. A lived experience, not a medical diagnosis.",
-  },
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://thewayforward.in/post-upsc-syndrome/#article",
+      headline: "POST-UPSC Syndrome — what it is and why it has a name",
+      url: "https://thewayforward.in/post-upsc-syndrome/",
+      inLanguage: "en-IN",
+      author: { "@type": "Person", name: "Rahul Govindu" },
+      publisher: {
+        "@type": "Organization",
+        name: "The Way Forward",
+        url: "https://thewayforward.in",
+      },
+      about: {
+        "@type": "DefinedTerm",
+        name: "POST-UPSC Syndrome",
+        description:
+          "The phase after a UPSC aspirant's final attempts when they realise the dream may never come true — and must rebuild their identity, career and confidence, often carrying a multi-year gap. A lived experience, not a medical diagnosis.",
+      },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://thewayforward.in/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "POST-UPSC Syndrome",
+          item: "https://thewayforward.in/post-upsc-syndrome/",
+        },
+      ],
+    },
+  ],
 };
 
 const SIGNS = [

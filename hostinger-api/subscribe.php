@@ -15,6 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
+// Same-origin check — the form only ever posts from our own pages.
+$origin = $_SERVER['HTTP_ORIGIN'] ?? $_SERVER['HTTP_REFERER'] ?? '';
+if ($origin !== '' && parse_url($origin, PHP_URL_HOST) !== ($_SERVER['HTTP_HOST'] ?? '')) {
+    http_response_code(403);
+    echo json_encode(['ok' => false, 'error' => 'Forbidden']);
+    exit;
+}
+
 $raw = file_get_contents('php://input');
 $data = [];
 if (str_contains($_SERVER['CONTENT_TYPE'] ?? '', 'application/json')) {

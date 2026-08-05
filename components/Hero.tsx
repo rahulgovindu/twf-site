@@ -4,7 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 
 const STATS = [
   { value: "10L+", label: "Aspirants every year" },
-  { value: "0.1%", label: "Final selection rate" },
+  { value: "~0.1%", label: "Final selection rate" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -70,7 +70,7 @@ export default function Hero() {
 
         <motion.div {...fadeUp(1.05)} className="mt-9 flex flex-wrap gap-4">
           <a href="#call-cta" className="btn btn-primary">
-            Book a Free Call
+            Book a free call
           </a>
           <a href="#to-whom" className="btn btn-ghost">
             Learn more

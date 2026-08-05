@@ -1,0 +1,8 @@
+# Upload alongside the PHP files to public_html/api/.
+# Blocks direct access to credentials; only the endpoints stay reachable.
+<Files "config.php">
+  Require all denied
+</Files>
+<Files "config.sample.php">
+  Require all denied
+</Files>

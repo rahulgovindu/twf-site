@@ -27,7 +27,7 @@ export default function ToWhom() {
         <Reveal>
           <p className="mb-10 leading-relaxed text-ink-dim">
             Whichever it is, this platform is for you — and for every
-            government-exam aspirant who gave everything for years and
+            government exam aspirant who gave everything for years and
             didn&rsquo;t see their name on the list. Failing an exam does not
             mean you failed at life.
           </p>
@@ -92,7 +92,7 @@ export default function ToWhom() {
             <blockquote>
               <p className="leading-relaxed text-ink">
                 <span className="mb-2 block text-sm font-semibold tracking-wide text-accent uppercase">
-                  Post-UPSC Syndrome
+                  POST-UPSC Syndrome
                 </span>
                 the phase after your final attempts when you realise the dream
                 may never come true — and you must rebuild your identity,
