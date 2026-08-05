@@ -61,11 +61,27 @@ export default function Founder() {
             <p className="mb-6 text-xs font-semibold tracking-[0.14em] text-ink-dim uppercase">
               The rebuild, two years in
             </p>
-            <div className="grid grid-cols-2 gap-x-6 gap-y-7">
+            <div className="grid grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-3">
+              <div>
+                <div className="font-display shine-warm text-3xl sm:text-4xl">
+                  100+
+                </div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-dim">
+                  aspirants &amp; students helped to find their way forward
+                </p>
+              </div>
               <div>
                 <div className="font-display shine text-3xl sm:text-4xl">2</div>
                 <p className="mt-1 text-sm leading-relaxed text-ink-dim">
                   companies built from zero
+                </p>
+              </div>
+              <div>
+                <div className="font-display shine text-3xl sm:text-4xl">
+                  30+
+                </div>
+                <p className="mt-1 text-sm leading-relaxed text-ink-dim">
+                  clients served with AI builds, in India &amp; abroad
                 </p>
               </div>
               <div>
@@ -77,7 +93,7 @@ export default function Founder() {
                 </p>
               </div>
               <div>
-                <div className="font-display shine-warm text-3xl sm:text-4xl">
+                <div className="font-display shine text-3xl sm:text-4xl">
                   3X
                 </div>
                 <p className="mt-1 text-sm leading-relaxed text-ink-dim">
@@ -90,7 +106,7 @@ export default function Founder() {
                   10+
                 </div>
                 <p className="mt-1 text-sm leading-relaxed text-ink-dim">
-                  doctors &amp; small businesses built into digital brands
+                  small businesses built into digital brands
                 </p>
               </div>
             </div>
@@ -112,7 +128,7 @@ export default function Founder() {
               >
                 Rose Media House
               </a>{" "}
-              — digital branding for doctors &amp; small businesses
+              — digital branding for professionals &amp; small businesses
             </p>
             <p className="mt-3 text-xs leading-relaxed text-ink-dim">
               B.Tech (ECE), JNTU Hyderabad · MA (PSIR), IGNOU · UGC NET
