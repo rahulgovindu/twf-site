@@ -14,12 +14,7 @@ const HELPLINES = [
 
 export default function Footer() {
   return (
-    <footer
-      className="border-t border-hairline pt-16 pb-10"
-      style={{
-        background: "linear-gradient(180deg, rgba(10,10,11,0) 0%, rgba(10,10,11,0.65) 100%)",
-      }}
-    >
+    <footer className="fade-grey border-t border-hairline pt-16 pb-10">
       <div className="mx-auto w-full max-w-7xl px-5 sm:px-8">
         <div className="grid gap-12 sm:grid-cols-3">
           <div>

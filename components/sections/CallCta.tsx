@@ -38,21 +38,12 @@ export default function CallCta() {
 
   return (
     <section id="call-cta" className="relative overflow-hidden py-28 sm:py-36">
-      {/* The logo motif — a dark orb glowing orange, set on the grey canvas */}
       <div
         aria-hidden
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 85% 100% at 50% 60%, #0a0a0b 25%, rgba(10,10,11,0.6) 55%, transparent 80%)",
-        }}
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(ellipse 55% 50% at 50% 68%, rgba(255,122,26,0.2), rgba(255,122,26,0.06) 50%, transparent 75%)",
+            "radial-gradient(ellipse 70% 65% at 50% 115%, rgba(255,122,26,0.22), rgba(255,122,26,0.07) 45%, transparent 75%)",
         }}
       />
 

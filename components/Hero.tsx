@@ -27,15 +27,6 @@ export default function Hero() {
       id="top"
       className="relative flex min-h-svh flex-col overflow-hidden"
     >
-      {/* Black core dissolving into the grey canvas — black lives here */}
-      <div
-        aria-hidden
-        className="absolute inset-0"
-        style={{
-          background:
-            "linear-gradient(180deg, #0a0a0b 0%, #101012 55%, rgba(10,10,11,0) 100%)",
-        }}
-      />
       {/* Ambient light layers — the sunrise behind everything */}
       <div
         aria-hidden
