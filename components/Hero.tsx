@@ -5,7 +5,6 @@ import { motion, useReducedMotion } from "framer-motion";
 const STATS = [
   { value: "10L+", label: "Aspirants every year" },
   { value: "0.1%", label: "Final selection rate" },
-  { value: "₹0", label: "Cost to you, ever" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -92,7 +91,7 @@ export default function Hero() {
               "linear-gradient(180deg, transparent, rgba(255,122,26,0.03))",
           }}
         />
-        <div className="relative mx-auto grid w-full max-w-7xl grid-cols-3 px-5 sm:px-8">
+        <div className="relative mx-auto grid w-full max-w-7xl grid-cols-2 px-5 sm:px-8">
           {STATS.map((s, i) => (
             <div
               key={s.label}

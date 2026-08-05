@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const NAV_LINKS = [
-  { href: "#to-whom", label: "Who it's for" },
-  { href: "#why", label: "Why" },
-  { href: "#letter", label: "For parents" },
-  { href: "#portal-teaser", label: "What's coming" },
+  { href: "/#to-whom", label: "Who it's for" },
+  { href: "/#why", label: "Why" },
+  { href: "/#letter", label: "For parents" },
+  { href: "/#portal-teaser", label: "What's coming" },
 ];
 
 export default function Header() {
@@ -30,7 +30,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto flex min-h-[4.25rem] w-full max-w-7xl items-center justify-between gap-4 px-5 sm:px-8">
-        <a href="#top" className="flex items-center gap-2.5">
+        <a href="/" className="flex items-center gap-2.5">
           <Image
             src="/twf-logo.jpg"
             alt=""
@@ -56,7 +56,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#call-cta"
+            href="/#call-cta"
             className="btn btn-primary !px-5 !py-2.5 text-sm whitespace-nowrap"
           >
             Book a Free Call
@@ -115,7 +115,7 @@ export default function Header() {
             ))}
             <li className="pt-2">
               <a
-                href="#call-cta"
+                href="/#call-cta"
                 className="btn btn-primary w-full"
                 onClick={() => setOpen(false)}
               >
