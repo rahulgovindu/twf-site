@@ -8,6 +8,7 @@ import Support from "@/components/sections/Support";
 import Letter from "@/components/sections/Letter";
 import Founder from "@/components/sections/Founder";
 import PortalTeaser from "@/components/sections/PortalTeaser";
+import ShareStory from "@/components/sections/ShareStory";
 import CallCta from "@/components/sections/CallCta";
 import Newsletter from "@/components/sections/Newsletter";
 
@@ -73,6 +74,7 @@ export default function Home() {
         <Letter />
         <Founder />
         <PortalTeaser />
+        <ShareStory />
         <CallCta />
         <Newsletter />
       </main>

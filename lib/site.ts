@@ -4,10 +4,10 @@
  * in the UI, so placeholders never ship by accident.
  */
 export const SITE = {
-  email: "contact@thewayforward.in",
+  email: "info@thewayforward.in",
 
   /** Digits only, with country code, e.g. "919876543210". Empty = hidden. */
-  whatsappNumber: "",
+  whatsappNumber: "918985308312",
   whatsappMessage:
     "Hi Rahul, I found The Way Forward and would like to talk.",
 
@@ -20,7 +20,7 @@ export const SITE = {
   },
 };
 
-export function whatsappLink(): string | null {
+export function whatsappLink(message?: string): string | null {
   if (!/^\d{10,15}$/.test(SITE.whatsappNumber)) return null;
-  return `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(SITE.whatsappMessage)}`;
+  return `https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(message ?? SITE.whatsappMessage)}`;
 }
