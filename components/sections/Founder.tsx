@@ -25,26 +25,31 @@ export default function Founder() {
 
         {/* Opening block: story text + portrait in a clean two-column grid
             (photo first in source so it leads on mobile). */}
-        <div className="sm:grid sm:grid-cols-[1fr_13rem] sm:items-start sm:gap-x-10">
-          <div className="relative mb-8 w-44 sm:order-2 sm:mb-0 sm:w-full">
+        <div className="sm:grid sm:grid-cols-[1fr_16rem] sm:items-start sm:gap-x-10">
+          <div className="relative mb-8 w-56 sm:order-2 sm:mb-0 sm:w-full">
             {/* The logo's halo, behind the founder — subtle orange glow */}
             <div
               aria-hidden
-              className="absolute -inset-8"
+              className="absolute -inset-10"
               style={{
                 background:
                   "radial-gradient(ellipse 60% 55% at 50% 45%, rgba(255,122,26,0.25), rgba(255,122,26,0.07) 55%, transparent 78%)",
               }}
             />
-            <img
-              src="/rahul-govindu.jpg"
-              alt="Rahul Govindu, founder of The Way Forward"
-              width={640}
-              height={853}
-              loading="lazy"
-              className="relative w-full rounded-[2px] border border-line"
-            />
-            <p className="relative mt-2 text-xs text-ink-dim">Rahul Govindu</p>
+            {/* Mounted-print frame */}
+            <figure className="surface-gradient relative rounded-[2px] border border-line-strong p-3 sm:p-3.5">
+              <img
+                src="/rahul-govindu.jpg"
+                alt="Rahul Govindu, founder of The Way Forward"
+                width={640}
+                height={853}
+                loading="lazy"
+                className="w-full rounded-[2px]"
+              />
+              <figcaption className="mt-3 text-center text-xs tracking-wide text-ink-dim">
+                Rahul Govindu · Founder
+              </figcaption>
+            </figure>
           </div>
 
           <div className="sm:order-1">
