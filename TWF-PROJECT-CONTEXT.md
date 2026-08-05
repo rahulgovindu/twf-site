@@ -101,10 +101,12 @@ Source line for exam stats: "UPSC Annual Reports" (approximations).
 - **Logo:** silver-metallic W-arrow in a dark circle with orange glow
   (`public/twf-logo.jpg`). Use the actual image, never a recreation.
 - **Founder photo (canonical):** `public/rahul-govindu.jpg` — B&W smiling
-  portrait, black tee, white bg (source: `TWF Assets\Rahul Profile Pic.png`).
-  In the founder section (floated right) and the SAME photo on all social
-  profiles for cross-platform recognition. The stern passport-style B&W
-  (`Rahul PP.jpeg`) was assessed and rejected.
+  portrait, black tee, soft grey studio backdrop (source:
+  `TWF Assets\Rahul Profile Pic Final.png`). In the founder section
+  (framed, right column) and the SAME photo on all social profiles for
+  cross-platform recognition. Rejected variants: stern passport B&W
+  (`Rahul PP.jpeg`), white-bg version, and two digital bg-replacement
+  attempts.
 - **Canvas:** black `#0A0A0B` (grey canvas was tried and rejected).
   Surfaces `#1E1E22` / `#28282D`. Text: silver `#B8BCC4`, strong `#D4D7DC`,
   dim `#7C818A`. Accent orange `#FF7A1A` (soft `#FFA05C`).
