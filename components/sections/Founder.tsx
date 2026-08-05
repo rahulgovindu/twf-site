@@ -136,8 +136,7 @@ export default function Founder() {
             </p>
             <p className="mt-3 text-xs leading-relaxed text-ink-dim">
               B.Tech (ECE), JNTU Hyderabad · MA (PSIR), IGNOU · UGC NET
-              qualified · ex-content developer &amp; mentor, UPSC coaching
-              industry
+              qualified · ex-mentor &amp; faculty, UPSC coaching industry
             </p>
           </div>
         </Reveal>

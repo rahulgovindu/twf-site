@@ -168,8 +168,8 @@ Separate pages: `/post-upsc-syndrome/` (definition, first-person account,
   (rosemediahouse.in, digital branding, co-founded with brother) ·
   independent full-stack & AI development practice.
 - Founder credentials: B.Tech ECE JNTU Hyderabad (2012–17) · MA Political
-  Science & IR, IGNOU (2021–23) · UGC NET qualified (2023) · ex-content
-  developer & mentor, La Ex IAS Academy (2022–23) · volunteers: Robinhood
+  Science & IR, IGNOU (2021–23) · UGC NET qualified (2023) · ex-mentor &
+  faculty, La Ex IAS Academy (2022–23) · volunteers: Robinhood
   Army, blood camps, COVID-19 relief. Languages: Telugu, English. Age 32.
 - Socials (DECIDED 2026-08-05): **personal-brand-first** — Rahul's own
   YouTube/Instagram/X accounts (@rahulgovindu), NOT separate TWF accounts.
