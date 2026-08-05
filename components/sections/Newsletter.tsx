@@ -98,6 +98,10 @@ export default function Newsletter() {
             <p className="mt-5 text-xs tracking-wide text-accent-soft">
               Subscribers get early access when the portal opens.
             </p>
+            <p className="mt-2 text-xs text-ink-dim">
+              We store only what you submit, never share it, and you can ask
+              us to delete it anytime.
+            </p>
           </div>
         </Reveal>
       </div>

@@ -84,7 +84,7 @@ export default function Why() {
         <Reveal>
           <p className="eyebrow mb-6">
             <span className="inline-block h-px w-7 bg-accent" aria-hidden />
-            Why this platform?
+            Why this exists
           </p>
         </Reveal>
         <Reveal>
@@ -130,41 +130,19 @@ export default function Why() {
 
         <Reveal>
           <p className="mt-12 mb-6 leading-relaxed text-ink-dim">
-            Opportunity cost, the value of time, the opportunity timeline (govt
-            jobs era → IT boom → internet/creator boom → now, the AI era), the
-            importance of a Plan B, and how to transition from UPSC to jobs or
-            business.
+            Preparation has a cost nobody discusses: time. Opportunity has
+            moved with every era — government jobs, then IT, then the
+            internet, now AI. A Plan B isn&rsquo;t betrayal of your dream;
+            it&rsquo;s how you carry that dream&rsquo;s discipline into the
+            next one.
           </p>
         </Reveal>
         <Reveal>
-          <p className="mb-10 text-lg leading-relaxed text-ink">
+          <p className="mb-14 text-lg leading-relaxed text-ink">
             What UPSC gave you — discipline, resilience, diverse knowledge — is{" "}
             <strong className="text-ink-strong">capital, not waste</strong>.
           </p>
         </Reveal>
-
-        <Reveal>
-          <h3 className="font-display shine mb-6 text-2xl sm:text-3xl">
-            Here you will:
-          </h3>
-        </Reveal>
-        <ol className="mb-14 space-y-4">
-          {[
-            "Learn from ex-aspirants' stories and transitions (podcast engine)",
-            "Discover the many ways to rebuild a career",
-            "Upskill with industry experts",
-            "Regain lost confidence and morale",
-          ].map((item, i) => (
-            <Reveal key={item} delay={i * 0.08}>
-              <li className="flex items-baseline gap-4">
-                <span className="text-sm font-medium tracking-widest text-accent">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <span className="text-ink">{item}</span>
-              </li>
-            </Reveal>
-          ))}
-        </ol>
 
         {/* FAQ */}
         <Reveal>

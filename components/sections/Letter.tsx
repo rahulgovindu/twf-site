@@ -37,11 +37,14 @@ export default function Letter() {
             {PARAGRAPHS.map((p) => (
               <p
                 key={p.slice(0, 24)}
-                className="font-display mb-6 text-[1.06rem] leading-[1.85] font-normal text-ink last:mb-0"
+                className="font-display mb-6 text-[1.06rem] leading-[1.85] font-normal text-ink"
               >
                 {p}
               </p>
             ))}
+            <p className="font-display mt-8 text-[1.06rem] leading-[1.85] text-ink-strong">
+              — Rahul, and every aspirant who never found the words
+            </p>
 
             <div className="mt-10">
               <a

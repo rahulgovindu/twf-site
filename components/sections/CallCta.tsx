@@ -152,6 +152,10 @@ export default function CallCta() {
             <p className="mt-6 text-sm text-ink-dim">
               We&rsquo;ll reach out within 3 working days.
             </p>
+            <p className="mt-2 text-xs text-ink-dim">
+              We store only what you submit, never share it, and you can ask
+              us to delete it anytime.
+            </p>
           </Reveal>
         )}
       </div>

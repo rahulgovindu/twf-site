@@ -7,7 +7,7 @@ export default function ToWhom() {
         <Reveal>
           <p className="eyebrow mb-6">
             <span className="inline-block h-px w-7 bg-accent" aria-hidden />
-            To whom is this platform?
+            Who this is for
           </p>
         </Reveal>
         <Reveal>
@@ -27,9 +27,8 @@ export default function ToWhom() {
         <Reveal>
           <p className="mb-10 leading-relaxed text-ink-dim">
             Primarily for UPSC aspirants, and aspirants of any government exam,
-            who gave their blood and sweat for years but couldn&rsquo;t clear
-            it. An exam is not life. Failing UPSC does not mean you failed at
-            life.
+            who gave everything for years but couldn&rsquo;t clear it. An exam
+            is not life. Failing UPSC does not mean you failed at life.
           </p>
         </Reveal>
 

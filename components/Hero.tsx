@@ -5,7 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 const STATS = [
   { value: "10L+", label: "Aspirants every year" },
   { value: "0.1%", label: "Final selection rate" },
-  { value: "100%", label: "Free support here" },
+  { value: "₹0", label: "Cost to you, ever" },
 ];
 
 const EASE = [0.22, 1, 0.36, 1] as const;
@@ -49,7 +49,7 @@ export default function Hero() {
       <div className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-5 pt-28 pb-16 sm:px-8">
         <motion.p {...fadeUp(0)} className="eyebrow mb-6">
           <span className="inline-block h-px w-7 bg-accent" aria-hidden />
-          The Way Forward
+          Life beyond the exam
         </motion.p>
 
         <h1 className="font-display max-w-4xl text-[clamp(2.5rem,5.6vw,4.6rem)]">

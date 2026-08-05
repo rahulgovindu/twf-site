@@ -15,9 +15,27 @@ const firaSans = Fira_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://thewayforward.in"),
   title: "The Way Forward — Life beyond the exam",
   description:
     "A platform for UPSC and government exam aspirants rebuilding their careers — stories, opportunities, skills, and support. An exam is not life.",
+  openGraph: {
+    title: "The Way Forward — Life beyond the exam",
+    description:
+      "The world only counts your hard work when you succeed. We count it anyway. For UPSC and government exam aspirants rebuilding their careers.",
+    url: "https://thewayforward.in",
+    siteName: "The Way Forward",
+    images: [{ url: "/og.jpg", width: 1200, height: 630 }],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Way Forward — Life beyond the exam",
+    description:
+      "The world only counts your hard work when you succeed. We count it anyway.",
+    images: ["/og.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
