@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Way Forward
 
-## Getting Started
+**Live: [thewayforward.in](https://thewayforward.in)**
 
-First, run the development server:
+A platform for UPSC and government exam aspirants rebuilding their careers
+after their attempts end — stories, opportunities, skills, and support.
+
+> The world only counts your hard work when you succeed.
+> **We count it anyway.**
+
+Built solo, end to end — brand system to live deployment — by
+[Rahul Govindu](https://www.linkedin.com/in/rahulgovindu/), an ex-UPSC
+aspirant (6+ years, 17,500+ hours) who rebuilt through entrepreneurship.
+The platform names the phase nobody talks about —
+[**POST-UPSC Syndrome**](https://thewayforward.in/post-upsc-syndrome/) —
+and exists to help aspirants walk out of it.
+
+## Tech stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js 16 (App Router, static export) · React 19 · TypeScript |
+| Styling | Tailwind CSS v4 (custom design tokens, `@utility` layer) · Framer Motion |
+| Fonts | Fraunces + Fira Sans, self-hosted via `next/font` (zero external requests) |
+| Backend | PHP 8 (PDO, prepared statements) · MySQL — JSON form APIs with honeypot + same-origin checks |
+| Infrastructure | Hostinger (Apache) · Let's Encrypt · hardened `.htaccess` (HTTPS, HSTS, security headers, caching) |
+| SEO / AEO | JSON-LD graph (Organization, WebSite, FAQPage, Article, DefinedTerm, BreadcrumbList) · programmatic sitemap/robots · OpenGraph |
+| Workflow | Git/GitHub · AI-assisted development (Claude) · custom scripting for asset generation |
+
+## Repository layout
+
+- **`master`** — application source (this branch)
+- **`hostinger`** — auto-generated deploy branch: the built static site plus
+  the `api/` PHP endpoints, mirroring exactly what `public_html` serves.
+  Never edited by hand.
+- `hostinger-api/` — form endpoint source + MySQL schema + deploy README.
+  `config.php` (DB credentials) lives only on the server: gitignored *and*
+  Apache-denied.
+- `TWF-PROJECT-CONTEXT.md` — the canonical project brief: mission, copy
+  bank, design tokens, editorial rules, roadmap.
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # static export -> out/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deployment is the contents of `out/` served from Apache `public_html`,
+plus `hostinger-api/` under `public_html/api/`. Full steps in
+[`hostinger-api/README.md`](hostinger-api/README.md).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Author
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Rahul Govindu** — Full-Stack & AI Developer · Founder,
+[Govindu Brothers Enterprises](http://www.govindubrothers.com) (agri-exports)
+· Co-founder, [Rose Media House](http://www.rosemediahouse.in)
 
-## Learn More
+- Website: [thewayforward.in](https://thewayforward.in)
+- LinkedIn: [/in/rahulgovindu](https://www.linkedin.com/in/rahulgovindu/)
+- YouTube: [@rahulgovindu](https://www.youtube.com/@rahulgovindu)
+- Email: info@thewayforward.in
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This repository is public as a portfolio work-sample. The Way Forward name,
+content, and brand are © Rahul Govindu — all rights reserved.
