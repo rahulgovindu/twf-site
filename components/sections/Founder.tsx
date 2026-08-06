@@ -18,8 +18,7 @@ export default function Founder() {
         </Reveal>
         <Reveal>
           <p className="mb-8 text-sm text-ink-dim italic">
-            Engineer by accident. Broke up with UPSC. Making peace with
-            entrepreneurship.
+            Engineer by accident. Broke up with UPSC. Building on purpose.
           </p>
         </Reveal>
 

@@ -74,8 +74,8 @@ Source line for exam stats: "UPSC Annual Reports" (approximations).
   Govindu
 - Closing philosophy: "Learning from mistakes, adapting to the present,
   evolving the future — that's the way forward."
-- Founder tagline: "Engineer by accident. Broke up with UPSC. Making peace
-  with entrepreneurship."
+- Founder tagline: "Engineer by accident. Broke up with UPSC. Building on
+  purpose."
 - Newsletter promise: "One honest email a week. … No coaching ads. No
   rank-holder worship."
 - Podcast call: "Made it big after UPSC? Be a light for many in the dark."
