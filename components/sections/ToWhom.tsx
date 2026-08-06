@@ -64,7 +64,7 @@ export default function ToWhom() {
           <p className="mb-10 border-l-2 border-accent pl-5 text-lg leading-relaxed text-ink">
             You carried all of this{" "}
             <strong className="text-ink-strong">by choice, not by force</strong>
-            . That is not ordinary. Those are the traits of a champion.
+            . That is not ordinary. That is what champions are made of.
           </p>
         </Reveal>
 
@@ -111,9 +111,13 @@ export default function ToWhom() {
         </Reveal>
 
         <Reveal>
-          <p className="mt-10 text-ink-dim">
+          <p className="mt-10 text-lg leading-relaxed text-ink">
             You are among India&rsquo;s most disciplined people. That
-            discipline doesn&rsquo;t expire with your attempts.
+            discipline{" "}
+            <strong className="text-ink-strong">
+              doesn&rsquo;t expire with your attempts
+            </strong>
+            .
           </p>
         </Reveal>
       </div>

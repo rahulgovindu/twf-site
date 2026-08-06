@@ -66,7 +66,7 @@ Source line for exam stats: "UPSC Annual Reports" (approximations).
 - Stanza: "Dreams. Family hopes. Sacrifices. / Loneliness. Broken promises.
   Silent tears. / The endless cycle of attempts. Your entire twenties."
 - Champion line: "You carried all of this by choice, not by force. That is
-  not ordinary. Those are the traits of a champion."
+  not ordinary. That is what champions are made of."
 - Capital line: "What UPSC gave you — discipline, resilience, diverse
   knowledge — is capital, not waste."
 - Motto: "I failed the UPSC exam, but I refuse to fail life. My mission is to
