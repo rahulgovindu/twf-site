@@ -3,15 +3,18 @@ import { SITE, whatsappLink } from "@/lib/site";
 const QUICK_LINKS = [
   { href: "/#to-whom", label: "Who it's for" },
   { href: "/post-upsc-syndrome/", label: "POST-UPSC Syndrome" },
+  { href: "/personalities-who-failed-upsc/", label: "Personalities who failed UPSC" },
+  { href: "/ten-things-upsc-taught-me/", label: "Ten things UPSC taught me" },
+  { href: "/the-100-reset/", label: "The 100 Reset" },
+  { href: "/about/", label: "About" },
   { href: "/#letter", label: "For parents" },
-  { href: "/#portal-teaser", label: "What's coming" },
   { href: "/#call-cta", label: "Book a call" },
 ];
 
 const HELPLINES = [
   { name: "Tele-MANAS", number: "14416" },
   { name: "iCall (TISS)", number: "9152987821" },
-  { name: "Vandrevala Foundation", number: "1860-2662-345" },
+  { name: "Vandrevala Foundation", number: "9999-666-555" },
 ];
 
 const SOCIAL_ICONS: Record<string, { label: string; path: string }> = {

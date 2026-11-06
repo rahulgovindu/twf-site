@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import { HOME_FAQ } from "@/lib/faq";
 
 /* Icon array: 500 dots, one lit — "fewer than 1 in 500 make the final list."
    Chosen over a bar/log chart: the story is a single extreme proportion, and an
@@ -62,20 +63,6 @@ const FUNNEL = [
   { value: "~1,000", label: "reach the final list" },
 ];
 
-const FAQ = [
-  {
-    q: "What is POST-UPSC Syndrome?",
-    a: "POST-UPSC Syndrome: the phase after your final attempts when you realise the dream may never come true — and you must rebuild your identity, career and confidence, often carrying a multi-year gap. It is a lived experience, not a medical diagnosis.",
-  },
-  {
-    q: "What are the actual odds of clearing UPSC?",
-    a: "Fewer than 1 in 500 who write the exam make the final list. Roughly 10 lakh apply each year, about 5 lakh appear, and around 1,000 are selected — a success rate of 0.1–0.2%.",
-  },
-  {
-    q: "Is The Way Forward a coaching institute?",
-    a: "No. The Way Forward is not coaching, not therapy, and not a job consultancy. It is a platform for aspirants whose attempts are over — stories of people who rebuilt, career opportunities, skills, and support to regain confidence.",
-  },
-];
 
 export default function Why() {
   return (
@@ -150,7 +137,7 @@ export default function Why() {
         {/* FAQ */}
         <Reveal>
           <div id="faq" className="divide-y divide-hairline border-y border-hairline">
-            {FAQ.map((f) => (
+            {HOME_FAQ.map((f) => (
               <details key={f.q} className="group py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-medium text-ink-strong [&::-webkit-details-marker]:hidden">
                   {f.q}

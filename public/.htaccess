@@ -42,3 +42,33 @@ RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
 </IfModule>
+# --- 404 handling ---
+# Next's static export writes the not-found page to /404.html.
+ErrorDocument 404 /404.html
+
+# Never serve a directory listing if an index file is ever missing.
+Options -Indexes
+
+# --- MIME types Hostinger's default config can miss ---
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+  AddType image/avif .avif
+  AddType application/manifest+json .webmanifest
+  AddType font/woff2 .woff2
+  AddType application/xml .xml
+</IfModule>
+
+# --- Compression for the crawl-facing text files ---
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE application/xml application/rss+xml
+  AddOutputFilterByType DEFLATE application/manifest+json
+  AddOutputFilterByType DEFLATE image/x-icon
+</IfModule>
+
+# --- Crawl-facing files: fresh, but not uncached ---
+# robots.txt, sitemap.xml and llms.txt change with content, not with builds,
+# so a short TTL keeps crawlers current without hammering the origin.
+<IfModule mod_expires.c>
+  ExpiresByType application/xml "access plus 1 hour"
+  ExpiresByType text/plain "access plus 1 hour"
+</IfModule>

@@ -1,82 +1,90 @@
-import Script from "next/script";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
 import ToWhom from "@/components/sections/ToWhom";
 import Why from "@/components/sections/Why";
 import Support from "@/components/sections/Support";
 import Letter from "@/components/sections/Letter";
 import Founder from "@/components/sections/Founder";
 import AfterExam from "@/components/sections/AfterExam";
+import Library from "@/components/sections/Library";
 import PortalTeaser from "@/components/sections/PortalTeaser";
 import ShareStory from "@/components/sections/ShareStory";
 import CallCta from "@/components/sections/CallCta";
 import Newsletter from "@/components/sections/Newsletter";
+import { HOME_FAQ } from "@/lib/faq";
+import {
+  abs,
+  baseGraph,
+  faqNode,
+  graph,
+  ORG_ID,
+  pageMetadata,
+  WEBSITE_ID,
+} from "@/lib/seo";
 
-/* FAQ answers must stay in sync with the FAQ section in components/sections/Why.tsx */
-const JSON_LD = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://thewayforward.in/#website",
-      url: "https://thewayforward.in",
-      name: "The Way Forward",
-      description:
-        "A platform for UPSC and government exam aspirants rebuilding their careers.",
-      inLanguage: "en-IN",
-      publisher: { "@id": "https://thewayforward.in/#org" },
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://thewayforward.in/#org",
-      name: "The Way Forward",
-      url: "https://thewayforward.in",
-      logo: "https://thewayforward.in/twf-logo.jpg",
-      description:
-        "A free platform for UPSC and government exam aspirants rebuilding their careers — stories, opportunities, skills, and support.",
-      founder: { "@type": "Person", name: "Rahul Govindu" },
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "What is POST-UPSC Syndrome?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "POST-UPSC Syndrome: the phase after your final attempts when you realise the dream may never come true — and you must rebuild your identity, career and confidence, often carrying a multi-year gap. It is a lived experience, not a medical diagnosis.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "What are the actual odds of clearing UPSC?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Fewer than 1 in 500 who write the exam make the final list. Roughly 10 lakh apply each year, about 5 lakh appear, and around 1,000 are selected — a success rate of 0.1–0.2%.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Is The Way Forward a coaching institute?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "No. The Way Forward is not coaching, not therapy, and not a job consultancy. It is a platform for aspirants whose attempts are over — stories of people who rebuilt, career opportunities, skills, and support to regain confidence.",
-          },
-        },
-      ],
-    },
+export const metadata = pageMetadata({
+  title: "Life After UPSC: Rebuild Your Career | The Way Forward",
+  description:
+    "For UPSC and government exam aspirants whose attempts are over. Understand POST-UPSC Syndrome, read people who rebuilt, and find the way forward — free.",
+  path: "/",
+  keywords: [
+    "life after UPSC",
+    "POST-UPSC Syndrome",
+    "UPSC failure what next",
+    "what to do after failing UPSC",
+    "career after UPSC preparation",
+    "government exam career transition",
+    "ex-UPSC aspirant jobs",
   ],
-};
+});
+
+/* The FAQ answers here are the same objects rendered in the Why section —
+   see lib/faq.ts. Marked-up answers must match visible ones. */
+const JSON_LD = graph([
+  ...baseGraph,
+  faqNode(HOME_FAQ, "/"),
+  {
+    "@type": "WebPage",
+    "@id": abs("/"),
+    url: abs("/"),
+    name: "Life After UPSC: Rebuild Your Career",
+    description:
+      "A platform for UPSC and government exam aspirants rebuilding their careers — stories, opportunities, skills, and support.",
+    isPartOf: { "@id": WEBSITE_ID },
+    about: { "@id": ORG_ID },
+    inLanguage: "en-IN",
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: abs("/og.jpg"),
+      width: 1200,
+      height: 630,
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", "#why h2", "#why p"],
+    },
+  },
+  {
+    "@type": "DefinedTerm",
+    "@id": `${abs("/post-upsc-syndrome/")}#term`,
+    name: "POST-UPSC Syndrome",
+    description:
+      "The phase after a UPSC aspirant's final attempts when they realise the dream may never come true — and must rebuild their identity, career and confidence, often carrying a multi-year gap. A lived experience, not a medical diagnosis.",
+    url: abs("/post-upsc-syndrome/"),
+    inDefinedTermSet: {
+      "@type": "DefinedTermSet",
+      name: "The Way Forward glossary",
+      url: abs("/"),
+    },
+  },
+]);
 
 export default function Home() {
   return (
     <>
-      <Script
-        id="twf-jsonld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
-      />
+      <JsonLd data={JSON_LD} />
       <Header />
       <main>
         <Hero />
@@ -86,6 +94,7 @@ export default function Home() {
         <Letter />
         <Founder />
         <AfterExam />
+        <Library />
         <PortalTeaser />
         <ShareStory />
         <CallCta />

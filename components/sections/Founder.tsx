@@ -71,7 +71,9 @@ export default function Founder() {
                 products, and built my own agri-exports company from zero.
                 Alongside it, I work as an independent full-stack developer,
                 shipping web platforms and AI tools for clients in India and
-                abroad.
+                abroad. In 2026 I started Pailam, a healthcare company in
+                Hyderabad, and I am Founder &amp; CEO of Pailam &amp; Pailam
+                Bridge.
               </p>
             </Reveal>
           </div>
@@ -97,16 +99,16 @@ export default function Founder() {
             <div className="grid grid-cols-2 gap-x-6 gap-y-7 sm:grid-cols-3">
               <div>
                 <div className="font-display shine-warm text-3xl sm:text-4xl">
-                  100+
+                  200+
                 </div>
                 <p className="mt-1 text-sm leading-relaxed text-ink-dim">
-                  aspirants &amp; students helped to find their way forward
+                  aspirants &amp; students directly impacted through this platform
                 </p>
               </div>
               <div>
-                <div className="font-display shine text-3xl sm:text-4xl">2</div>
+                <div className="font-display shine text-3xl sm:text-4xl">3</div>
                 <p className="mt-1 text-sm leading-relaxed text-ink-dim">
-                  companies built from zero
+                  companies started from zero
                 </p>
               </div>
               <div>
@@ -144,6 +146,27 @@ export default function Founder() {
               </div>
             </div>
             <p className="mt-7 border-t border-hairline pt-5 text-sm leading-relaxed text-ink">
+              Founder &amp; CEO of{" "}
+              <a
+                href="https://pailam.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-soft transition-colors hover:text-accent"
+              >
+                Pailam
+              </a>{" "}
+              &amp;{" "}
+              <a
+                href="https://www.pailambridge.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent-soft transition-colors hover:text-accent"
+              >
+                Pailam Bridge
+              </a>{" "}
+              — a healthcare company in Hyderabad. Pailam Bridge arranges
+              treatment in India for families living abroad, and Pailam Care,
+              home care, is coming soon ·{" "}
               <a
                 href="http://www.govindubrothers.com"
                 target="_blank"
@@ -162,9 +185,9 @@ export default function Founder() {
                 Rose Media House
               </a>{" "}
               — digital branding for professionals &amp; small businesses ·
-              and the third build is the one you&rsquo;re reading — this
-              platform, designed and shipped end to end with the same AI
-              tooling I use for clients
+              and the build you&rsquo;re reading now — this platform, designed
+              and shipped end to end with the same AI tooling I use for
+              clients
             </p>
             <p className="mt-3 text-xs leading-relaxed text-ink-dim">
               B.Tech (ECE), JNTU Hyderabad · MA (PSIR), IGNOU · UGC NET

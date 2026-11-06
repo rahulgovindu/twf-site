@@ -6,8 +6,10 @@ import { useEffect, useState } from "react";
 const NAV_LINKS = [
   { href: "/#to-whom", label: "Who it's for" },
   { href: "/#why", label: "Why" },
+  { href: "/#library", label: "Read" },
   { href: "/#letter", label: "For parents" },
   { href: "/#portal-teaser", label: "What's coming" },
+  { href: "/about/", label: "About" },
 ];
 
 export default function Header() {
@@ -32,7 +34,7 @@ export default function Header() {
       <div className="mx-auto flex min-h-[4.25rem] w-full max-w-7xl items-center justify-between gap-4 px-5 sm:px-8">
         <a href="/" className="flex items-center gap-2.5">
           <Image
-            src="/twf-logo.jpg"
+            src="/twf-logo-120.webp"
             alt=""
             width={40}
             height={40}
@@ -45,7 +47,7 @@ export default function Header() {
         </a>
 
         {/* Desktop nav */}
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
@@ -65,7 +67,7 @@ export default function Header() {
 
         {/* Mobile toggle */}
         <button
-          className="p-2 text-ink md:hidden"
+          className="p-2 text-ink lg:hidden"
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen(!open)}
@@ -98,7 +100,7 @@ export default function Header() {
       {/* Mobile menu */}
       {open && (
         <nav
-          className="border-t border-hairline bg-surface/95 backdrop-blur-xl px-5 py-6 md:hidden"
+          className="border-t border-hairline bg-surface/95 backdrop-blur-xl px-5 py-6 lg:hidden"
           aria-label="Primary mobile"
         >
           <ul className="flex flex-col gap-4">

@@ -19,6 +19,9 @@ endpoints backed by a MySQL database on the same Hostinger plan.
 3. Upload this folder's PHP files to `public_html/api/`
    (`subscribe.php`, `book-call.php`, `config.php`).
    The forms post to `/api/subscribe.php` and `/api/book-call.php`.
+4. If pages changed, tell IndexNow once the upload is live, for example:
+   `npm run indexnow -- /about/ /feed.xml` (in Git Bash, prefix it with
+   `MSYS_NO_PATHCONV=1`).
 
 ## Checking submissions
 

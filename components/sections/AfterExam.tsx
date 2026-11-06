@@ -70,7 +70,22 @@ export default function AfterExam() {
         </div>
 
         <Reveal>
-          <p className="mt-10 text-sm text-ink-dim">
+          <p className="mt-10 leading-relaxed text-ink-dim">
+            We also keep a{" "}
+            <a
+              href="/personalities-who-failed-upsc/"
+              className="font-medium text-accent-soft transition-colors hover:text-accent"
+            >
+              source-verified list of people who wrote the exam, were never
+              selected, and rebuilt
+            </a>{" "}
+            — along with the famous names on every other list that no primary
+            source actually supports.
+          </p>
+        </Reveal>
+
+        <Reveal>
+          <p className="mt-6 text-sm text-ink-dim">
             Walked this road yourself and built something?{" "}
             <a
               href="#share-story"

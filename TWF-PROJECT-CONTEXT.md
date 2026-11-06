@@ -48,8 +48,8 @@ one-on-one support. Newsletter subscribers get early access.
 | 6+ years / 17,500+ hours | Rahul's preparation |
 | 5+ years | Rahul's career gap |
 | 6 months | time it took Rahul to make peace |
-| 100+ | aspirants/students Rahul has helped find direction |
-| 2 | companies built from zero |
+| 200+ | aspirants and students directly impacted through this platform (figure from Rahul, 5 Nov 2026) |
+| 3 | companies started from zero (Govindu Brothers, Rose Media House, Pailam) |
 | 30+ | clients served with AI/web builds (India + abroad) |
 | 300+ | export products analysed |
 | 3X | growth delivered for export clients |
@@ -92,7 +92,7 @@ Source line for exam stats: "UPSC Annual Reports" (approximations).
   Never add Satya Nadella / Amitabh Bachchan / Chetan Bhagat (unverified
   listicle claims).
 - Mental health: list helplines, never claim to provide counselling.
-  Tele-MANAS 14416 · iCall (TISS) 9152987821 · Vandrevala 1860-2662-345.
+  Tele-MANAS 14416 · iCall (TISS) 9152987821 · Vandrevala 9999-666-555.
 - Newsletter success message is "You made this list. Talk soon." — a
   deliberate redemptive echo of the UPSC final list. Keep it.
 
@@ -113,7 +113,7 @@ Source line for exam stats: "UPSC Annual Reports" (approximations).
 - **Silver heading gradient:** 177deg #F0F1F3 → #D4D7DC → #A8ADB5 → #C9CCD1.
   **Warm variant (shine-warm):** silver melting to orange — reserved for
   time/cost/mission emphasis ("We count it anyway.", "Your entire
-  twenties.", the 3X and 100+ tiles).
+  twenties.", the 3X and 200+ tiles).
 - **Fonts:** Fraunces (headings, weight 550, opsz 100) + Fira Sans (body).
 - **Shape language:** sharp 2px corners (no pills), hairline borders,
   radial orange glows (the logo halo at section scale), film grain at 2.5%.
@@ -173,7 +173,12 @@ Separate pages: `/post-upsc-syndrome/` (definition, first-person account,
 - Ventures: **Govindu Brothers Enterprises** (govindubrothers.com,
   agri-exports to Dubai & Sri Lanka, APEDA-associated) · **Rose Media House**
   (rosemediahouse.in, digital branding, co-founded with brother) ·
-  independent full-stack & AI development practice.
+  **Pailam Healthcare Technologies Private Limited** (Founder & CEO;
+  incorporated 29 Oct 2026; pailam.in for Pailam Care, coming soon, and
+  pailambridge.com for Pailam Bridge, live) · independent full-stack & AI
+  development practice. Before writing anything public about Pailam, check
+  `E:\Business\Silver Nest Care\Pailam247\PAILAM_PROJECT_CONTEXT.md`: it is
+  pre-revenue, so no traction claims, named hospital partners or superlatives.
 - Founder credentials: B.Tech ECE JNTU Hyderabad (2012–17) · MA Political
   Science & IR, IGNOU (2021–23) · UGC NET qualified (2023) · ex-mentor &
   faculty, La Ex IAS Academy (2022–23) · volunteers: Robinhood

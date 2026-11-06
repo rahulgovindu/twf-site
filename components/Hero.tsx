@@ -46,12 +46,16 @@ export default function Hero() {
 
       {/* Headline block — left-anchored, vertically centered */}
       <div className="relative mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-5 pt-28 pb-16 sm:px-8">
-        <motion.p {...fadeUp(0)} className="eyebrow mb-6">
-          <span className="inline-block h-px w-7 bg-accent" aria-hidden />
-          Life beyond the exam
-        </motion.p>
-
+        {/* The kicker sits inside the h1 so the page's main heading names
+            the topic people search for, while the slogan stays the headline. */}
         <h1 className="font-display max-w-4xl text-[clamp(2.5rem,5.6vw,4.6rem)]">
+          <motion.span
+            {...fadeUp(0)}
+            className="eyebrow mb-6 flex w-fit font-[family-name:var(--font-body)] leading-normal"
+          >
+            <span className="inline-block h-px w-7 bg-accent" aria-hidden />
+            Life after UPSC
+          </motion.span>
           <motion.span {...fadeUp(0.15)} className="shine block">
             The world only counts your hard work when you succeed.
           </motion.span>

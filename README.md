@@ -56,6 +56,8 @@ plus `hostinger-api/` under `public_html/api/`. Full steps in
 **Rahul Govindu** — Full-Stack & AI Developer · Founder,
 [Govindu Brothers Enterprises](http://www.govindubrothers.com) (agri-exports)
 · Co-founder, [Rose Media House](http://www.rosemediahouse.in)
+· Founder & CEO, [Pailam](https://pailam.in) (healthcare;
+[Pailam Bridge](https://www.pailambridge.com))
 
 - Website: [thewayforward.in](https://thewayforward.in)
 - LinkedIn: [/in/rahulgovindu](https://www.linkedin.com/in/rahulgovindu/)
